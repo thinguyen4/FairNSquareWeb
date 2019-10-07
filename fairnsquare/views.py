@@ -40,11 +40,21 @@ from django.http import HttpResponse
 from fairnsquare.functions import handle_uploaded_file  
 from fairnsquare.forms import UploadForm  
 from fairnsquare.static.upload.file_read_display_features import load_preproc_data
+import os.path
+import time
 def upload(request):  
     if request.method == 'POST':  
         fUpload = UploadForm(request.POST, request.FILES)  
         if fUpload.is_valid():  
-            handle_uploaded_file(request.FILES['file']) 
+            handle_uploaded_file(request.FILES['file'])
+            time_to_wait = 5
+            time_counter = 0
+            file_path = "fairnsquare/static/upload/wa_hmda_small.csv"
+            while not os.path.exists(file_path):
+                time.sleep(1)
+                time_counter += 1
+                if time_counter > time_to_wait:break
+
             XD_features = load_preproc_data()
             return render(request,"selectFeatures.html", {'features': XD_features})  
     else:  
