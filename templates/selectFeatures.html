@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Feature Lists</h1>
+{% for f in features %}
+    <input type="checkbox" name="features" value="{{forloop.counter}}" /> {{f|capfirst}}<br />
+{% endfor %}
+{% endblock %}

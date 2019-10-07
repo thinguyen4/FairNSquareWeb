@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    .dropzone{
+       width:300px;
+       height:300px;
+       border:2px dashed #ccc;
+       color:#ccc;
+       line-height:300px;
+       text-align:center;
+    
+     }
+    .dropzone.dragover{
+        border-color:#000;
+        color:#000;
+     }
+     </style>
+<h1>Load Training Dataset for Feature Selection</h1>
+     
+<div id="upload"></div>
+<div class="dropzone" id="dropzone">Drop files here</div>
+<script>
+    (function(){
+    var dropzone=document.getElementById('dropzone');
+
+    dropzone.ondrop=function(e){
+    fileinput.files=e.dataTransfer.files
+    e.preventDefault()};
+
+    dropzone.ondrop=function(e){
+    e.preventDefault();
+    this.className='dropzone';
+
+    x=e.dataTransfer.files
+    console.log(x)
+    };
+
+    dropzone.ondragover=function(){
+    this.className='dropzone dragover';
+    return false;
+    };
+
+    dropzone.ondragleave=function(){
+     this.className='dropzone';
+     return false;
+     };
+    }());
+</script>
+
+
+<!-- <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+
+</form> -->
+
+<form method="POST" class="post-form" enctype="multipart/form-data">  
+    {% csrf_token %}  
+    {{ form.as_p }}  
+    <br/> <br/>
+    <button type="submit" id="button">Upload data</button>
+</form>  
+<!-- 
+{% if uploaded_file_url %}
+    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+{% endif %}
+{% endblock %} -->

@@ -1,0 +1,20 @@
+sequence_number,tract_to_msamd_income,population,minority_population,loan_amount_000s,loan_type_name,applicant_income_000s,applicant_sex_name,loan_purpose_name,applicant_race_name_1,action_taken_name
+119969,121.6900024,8381,23.79000092,227,FHA-insured,116,Female,Home purchase,Hispanic,1
+52605,83.37000275,4915,23.98999977,240,Conventional,42,MaleFemale,Refinancing,White,1
+6210,91.12999725,5075,11.81999969,241,Conventional,117,FemaleMale,Home improvement,White,1
+197,146.1699982,5032,8.590000153,351,VA-guaranteed,315,Male,Refinancing,African American,1
+32582,162.4700012,5183,10.5,417,VA-guaranteed,114,Female,Refinancing,White,1
+6270,119.6299973,4775,18.88999939,206,VA-guaranteed,?,Male,Refinancing,White,1
+10009,103.2099991,4745,33.06999969,356,FHA-insured,?,MaleFemale,Refinancing,African American,1
+192917,93.76999664,7451,33.40000153,265,Conventional,?,Male,Home purchase,White,1
+52027,109.5800018,6567,21.70999908,131,Conventional,?,Male,Refinancing,Asian,1
+490,87.16000366,9326,19.39999962,199,Conventional,37,Male,Refinancing,White,1
+2382,168.8200073,3344,17.19000053,885,Conventional,150,MaleFemale,Home purchase,White,1
+6528,76.19999695,7157,31.35000038,338,Conventional,59,Female,Refinancing,African American,1
+6807,86.33999634,4742,25.37000084,383,VA-guaranteed,110,Male,Refinancing,White,1
+11080,92.83999634,5422,14.28999996,169,Conventional,55,Male,Refinancing,Asian,1
+15106,103.0599976,5130,12.15999985,255,Conventional,60,MaleFemale,Refinancing,White,1
+316810,126.8099976,3690,15.03999996,316,Conventional,92,MaleFemale,Home purchase,African American,1
+13242,110.0500031,7745,49.72000122,70,Conventional,73,Male,Home purchase,White,1
+5968,125.6699982,5752,13.22999954,234,Conventional,168,FemaleMale,Home purchase,White,1
+1842,114.0999985,4680,12.35000038,343,Conventional,110,Male,Home purchase,Hispanic,1
